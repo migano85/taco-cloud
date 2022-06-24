@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -21,8 +20,6 @@ import tacos.data.UserRepository;
  
 @Configuration
 public class SecurityConfig {
-//	@Autowired
-//	UserRepository userRepo;
 	
   @Bean
   public PasswordEncoder passwordEncoder() {
